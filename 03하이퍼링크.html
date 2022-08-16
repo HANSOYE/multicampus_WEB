@@ -1,0 +1,30 @@
+<!-- 03하이퍼링크.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 03하이퍼링크.html </title>
+    </head>
+    <body>
+        <h1>텍스트에 링크를 걸어봅시다.</h1>
+        <a href="https://www.naver.com">네이버</a>
+        <a href="https://www.google.com">구글</a>
+        <a href="https://www.daum.net" target="_blank">다음</a>
+        <!-- target="_balnk" : 새로운 탭으로 연결 -->
+
+        <hr color = 'green'>
+
+        <!-- 상대경로 방식: 현재 작성한 파일이 있는 곳을 기준으로 접근하는 방식
+                C://WEB/
+                    +--- 03하이퍼링크.html
+                    . : 현재 디렉토리 의미
+                    .. : 현재보다 한 단계 상위를 의미
+                    ../.. : 현재보다 두 단계 상위를 의미 -->
+        <a href="01HTML시작.html" target = '_blank'>내가 만든 문서1</a>
+        <hr>
+        <a href="./sample/test.html" target = '_blank'>테스트 html</a>
+
+        <hr>
+        <!-- 절대 경로 방식 -->
+        <a href="C:\\WEB\\sample\\test.html" target="_blank">test.html로 가기</a>
+    </body>
+</html>
