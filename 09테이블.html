@@ -1,0 +1,73 @@
+<!-- 09테이블.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09테이블.html</title>
+</head>
+<body>
+    <h1>테이블 태그 (3행2열)</h1>
+    <!-- tr: 행태그 table row
+         td: 열태그 table data -->
+    <table border="1" bordercolor="pink"
+    bgcolor="ivory" 
+    cellspacing="10px" cellpadding="20px" align="center"
+    background="images/쿨쿨이햄토리.png"
+    width="400px" height="300px" style="color:yellow">
+        <!-- 1행 -->
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+        </tr>
+        <!-- 2행 -->
+        <tr>
+            <td>2행1열</td>
+            <td>2행2열</td>
+        </tr>
+        <!-- 3행 -->
+        <tr>
+            <td>3행1열</td>
+            <td>3행2열</td>
+        </tr>
+    </table>
+
+    <hr>
+    <!-- 3행 4열 -->
+    <table border="1" width="80%" height="200">
+        <thead>
+            <tr bgcolor="#3289af">
+                <th width="10%">번호</th>
+                <th width="20%">이름</th>
+                <th width="30%">연락처</th>
+                <th width="40%">주소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td bgcolor="pink" style="color:aqua">김수한</td>
+                <td>010-3</td>
+                <td>주소1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td background="images/판다햄토리.png">무거북</td>
+                <td>010-2</td>
+                <td>주소2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>이와두</td>
+                <td>010-1</td>
+                <td>주소3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <caption>회원 주소록</caption>
+        </tfoot>
+    </table>
+
+</body>
+</html>
