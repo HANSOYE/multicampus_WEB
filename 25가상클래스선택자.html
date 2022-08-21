@@ -1,0 +1,66 @@
+<!-- 25가상클래스선택자.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25가상클래스선택자.html</title>
+    <style type="text/css"> 
+        *{
+            padding: 5px;
+            margin: 5px;
+        }
+        /*input요소 중 type이 text인 요소만 선택해서 글자색 green
+        요소[속성명=속성의 요소]
+        */
+        input[type=text]{
+            color: green;
+        }
+        /*type이 password인 요소 선택해서 배경색 설정*/
+        input[type=password]{
+            background-color: lavenderblush;
+        }
+        input[type=text]:focus{
+            color: rgb(199, 177, 53);
+        }
+        /*password에 포커스가 오면 테두리를 red thick dashed*/
+        input[type=passwore]{
+            border: thick rgb(110, 122, 177) dashed;
+        }
+        /* input 요소 중 disabled된 요소 옆의 span을 찾아서 글자색을 gray로 */
+        input:disabled+span{
+            color: rgb(149, 199, 99);
+        }
+
+        input:enabled{
+            color: rgb(142, 142, 182);
+        }
+
+        input:checked+span{
+            color: rgb(224, 134, 134);
+        }
+        
+        /* input 요소 중 체크가 되면 그 옆의 span요소의 글자색을 red로 */
+
+    </style>
+</head>
+<body>
+    <h1>가상클래스 선택자(Pseudo Selector) => 요소:특성 </h1>
+    <input type="text" value="포커스가 오면 red로"><br>
+    <input type="password" value="포커스가 오면 green로"><br>
+    <hr>
+
+    <label><input type="radio" checked value="male" name="gender"><span>Male</span></label>
+    <label><input type="radio" value="female" name="gender"><span>Female</span></label>
+
+    <hr>
+    <input type="checkbox" checked="checked" value="bicycle">
+    <span>I have a bicycle</span>
+    <input type="checkbox" value="car">
+    <span>I have a car</span><br>
+    <input type="checkbox" value="motorcycle" disabled>
+    <span>I have a motorcycle</span>
+
+</body>
+</html>
