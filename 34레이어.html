@@ -1,0 +1,73 @@
+<!-- 34레이어.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>34레이어.html</title>
+    <style>
+        body{
+            padding: 20px;
+        }
+        div:not(#root){
+            /*background-color: aqua;*/
+            width: 100px;
+            height: 100px;
+        }
+        .z-1{
+            background-color: lightgoldenrodyellow;
+            position: absolute; /*부모에 position:relative;를 주지 않으면
+            body를 기준으로 50 50 위치에 위치하게 된다*/
+            left: 50px;
+            top: 50px;
+            z-index: 4;
+        }
+
+        .z-2{
+            background-color: lavender;
+            position: absolute; /*부모에 position:relative;를 주지 않으면
+            body를 기준으로 50 50 위치에 위치하게 된다*/
+            left: 80px;
+            top: 80px;
+            z-index: 3; /*z 인덱스 값이 클 수록 레이어 계층의 위로 올라간다*/
+        }
+
+        .z-3{
+            background-color: lightcyan;
+            position: absolute; /*부모에 position:relative;를 주지 않으면
+            body를 기준으로 50 50 위치에 위치하게 된다*/
+            left: 110px;
+            top: 110px;
+            z-index: 2;
+        }
+
+        .z-4{
+            background-color: lightpink;
+            position: absolute; /*부모에 position:relative;를 주지 않으면
+            body를 기준으로 50 50 위치에 위치하게 된다*/
+            left: 140px;
+            top: 140px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>레이어를 구성해보자.</h1>
+  <div id="root" style="position:relative;">
+	  <div id="" class="z-1">
+		 레이어: z-1
+	  </div>
+	  <div id="" class="z-2">
+		 레이어: z-2
+	  </div>
+	  <div id="" class="z-3">
+		 레이어: z-3
+	  </div>
+	  <div id="" class="z-4">
+		 레이어: z-4
+	  </div>
+  </div>
+
+</body>
+</html>
