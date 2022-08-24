@@ -1,0 +1,87 @@
+<!-- 39div텍스트정렬.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>39div텍스트정렬.html</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+
+        }
+        /*id가 mydiv인 요소를 선택해서 중앙정렬하세요.
+        수직정렬도 middle에 위치하게 하세요
+        테두리 border 주기*/
+        #mydiv{
+            text-align: center;
+            /*vertical-align: ; 테이블 태그 안에서는 적용가능하지만
+            div에서는 적용불가능하다*/
+            line-height: 300px;
+            border: 1px solid black;
+        }
+        #mytab{
+            border: 2px solid tomato;
+            margin-top: 1em;
+            display: table;
+        }
+        #mycell{
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        #mytab2{
+            background-color: burlywood;
+            margin-top: 1em;
+            border: 3px solid darkgreen;
+            display: none; /*block요소로 주면 다시 나타남*/
+            /*안 보임. 영역도 사라짐*/
+        }
+        #mydiv2{
+            background-color: aquamarine;
+            visibility: hidden;
+            /*안보임. 영역을 그대로 남아있음*/
+        }
+        #mydiv{
+            opacity: 0.5; /*투명도: 0(투명), 1(불투명)*/
+            visibility: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div id="mydiv" class="">
+        가나다라마바사
+    </div>
+    <div id="mydiv2" class="">
+        가나다라마바사
+    </div>
+    <div id="mytab" class="">
+        <div id="mycell">
+            자차카타파하
+        </div>
+    </div>
+    
+    <div id="mytab2" class="">
+        <div id="mycell2">
+            자차카타파하
+        </div>
+    </div>
+    <h1 onclick="show()">안녕하세요</h1>
+    <script>
+        function show(){
+            var obj=document.getElementById('mytab2');
+            //alert(obj)
+            obj.style.display='block';
+            //display none이었던 것이 block요소로 바뀌면서 다시 등장함
+            var obj2 = document.getElementById('mydiv2');
+            obj2.style.visibility='visible';
+            var obj3 = document.getElementById('mydiv');
+            obj3.style.visibility='visible';
+        }
+    </script>
+</body>
+</html>
