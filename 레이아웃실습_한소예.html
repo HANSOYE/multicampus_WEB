@@ -1,0 +1,143 @@
+<!-- 레이아웃실습_한소예.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃실습_한소예.html</title>
+    <style>
+        .title{
+            text-align: center;
+        }
+
+        .title_img{
+            border: 1px solid rgb(218, 196, 168);
+            width: 1000px;
+        }
+
+        #menu{
+            width: 1000px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+            clear: both;
+            
+        }
+        .bx{
+            clear: both;
+        }
+
+        .left{
+            float: left;
+            width: 690px;
+            border: 1px solid rgb(218, 196, 168);
+            margin-right: 16px;
+            height: 450px;
+        }
+
+        .right{
+            float: left;
+            height: 140px;
+            width: 290px;
+            height: 450px;
+            border: 1px solid rgb(218, 196, 168);
+        }
+
+        .lft{
+            float: left;
+            margin: 20px;
+            border: 1px dotted rgb(218, 196, 168);
+            width: 302px;
+            height: 180px;
+        }
+
+        .core{
+            margin: 0 auto;
+            width:1000px;
+            height: 450px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .foot{
+            background-color: antiquewhite;
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        a:link{
+            text-decoration: none;
+            color: black;
+        }
+
+        /*방문후*/
+        a:visited{
+            color: black;
+        }
+
+        #menu_num{
+            margin:20px;
+        }
+        #sub_title{
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px;
+        }
+        #content{
+            margin: 10px;
+        }
+
+        #homebar{
+            margin:10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="title">
+        <img class="title_img" src="/images/네이버.png">
+    </div>
+    <div id="menu">
+        <a id="homebar" href="https://naver.com">네이버홈</a>
+        <a id="homebar" href="https://nid.naver.com/user2/V2Join?m=agree&lang=ko_KR&cpno=">회원가입</a>
+        <a id="homebar" href="https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fwww.naver.com">로그인</a>
+        <a id="homebar" href="https://comic.naver.com/index">웹툰</a>
+    </div>
+    <div class="core">
+        <div class="left">
+            <div class="lft">
+                <a id="sub_title" href="https://jr.naver.com/">쥬니어네이버</a><br>
+                <a id="content" href="https://jr.naver.com/character">캐릭터</a><br>
+            </div>
+            <div class="lft">
+                <a id="sub_title" href="https://jr.naver.com/">쥬니어네이버</a><br>
+                <a id="content" href="https://jr.naver.com/category">카테고리</a><br>
+            </div class="lft">
+            <p class="bx"></p>
+            <div class="lft">
+                <a id="sub_title" href="https://jr.naver.com/">쥬니어네이버</a><br>
+                <a id="content" href="https://jr.naver.com/introduce/junis">쥬니스 소개</a><br>
+            </div>
+            <div class="lft">
+                <a id="sub_title" href="https://jr.naver.com/">쥬니어네이버</a><br>
+                <a id="content" href="https://jr.naver.com/favorite">즐겨찾기</a><br>
+            </div>
+
+        </div>
+        <div class="right">
+            <br>
+            <a id="menu_num" href="https://mail.naver.com/">메일</a><br><br>
+            <a id="menu_num" href="https://cafe.naver.com/">카페</a><br><br>
+            <a id="menu_num" href="https://blog.naver.com/">블로그</a><br><br>
+            <a id="menu_num" href="https://kin.naver.com/">지식인</a><br><br>
+        </div>
+        
+    </div>
+    <div class="foot">
+        <span>&copy;Copyright/</span>
+        <a href="https://www.navercorp.com/">회사소개</a>
+    </div>
+    
+</body>
+</html>
